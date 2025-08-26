@@ -417,34 +417,26 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-// Mobile menu functionality
-        const openMenuButton = document.getElementById('openMenu');
-        const closeMenuButton = document.getElementById('closeMenu');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const menuOverlay = document.getElementById('menuOverlay');
-        
-        function openMenu() {
-            mobileMenu.classList.add('active');
-            menuOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-        
-        function closeMenu() {
-            mobileMenu.classList.remove('active');
-            menuOverlay.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-        
-        openMenuButton.addEventListener('click', openMenu);
-        closeMenuButton.addEventListener('click', closeMenu);
-        menuOverlay.addEventListener('click', closeMenu);
-        
-        // Close menu when clicking on links
-        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', closeMenu);
-        });
-        
+
+        const openMenuBtn = document.getElementById('openMenu');
+  const closeMenuBtn = document.getElementById('closeMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuOverlay = document.getElementById('menuOverlay');
+
+  // Open Menu
+  openMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+    menuOverlay.classList.remove('hidden');
+  });
+
+  // Close Menu
+  function closeMenu() {
+    mobileMenu.classList.add('hidden');
+    menuOverlay.classList.add('hidden');
+  }
+
+  closeMenuBtn.addEventListener('click', closeMenu);
+  menuOverlay.addEventListener('click', closeMenu);
         // Animation on scroll
         function checkVisibility() {
             const elements = document.querySelectorAll('.fade-in');
@@ -469,3 +461,4 @@ function downloadFile(filename) {
     link.click();
 
     document.body.removeChild(link);}
+
