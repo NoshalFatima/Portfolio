@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noshal - Web Developer & Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="/Pics/NF.jpg" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" differ>
+    </script>
+    <style>
+        /* Custom CSS for responsiveness */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        
+        
+    </style>
+</head>
+<body class="bg-black text-dark scroll-smooth">
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="absolute top-4 right-4 text-white text-2xl" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav>
+            <a href="#home" class="text-white text-xl py-2">Home</a>
+            <a href="#services" class="text-white text-xl py-2">Services</a>
+            <a href="#portfolio" class="text-white text-xl py-2">Portfolio</a>
+            <a href="#experience" class="text-white text-xl py-2">Experience</a>
+            <a href="#skills" class="text-white text-xl py-2">Skills</a>
+            <a href="#testimonials" class="text-white text-xl py-2">Testimonials</a>
+            <a href="#Blog" class="text-white text-xl py-2">Blogs</a>
+        </nav>
+    </div>
+    
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Header/Navigation -->
+    <header class="fixed w-full mode bg-gradient-to-r from-[#170C20] to-[#261540] shadow-md z-50 text-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center header-container">
+            <img src="/Pics/NF.jpg" class="w-12 h-12 rounded-full">
+            <a href="#" class="text-sm font-bold mr-2 header-email">noshalprincess@gmail.com</a>
+            
+            <nav class="hidden md:flex space-x-4 lg:space-x-6">
+            <a href="#home"class="relative inline-block light px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Home
+            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>          
+             <a href="#services" class="relative light inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Services
+            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+             <a href="#portfolio" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Portfolio
+            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#experience" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Experience
+            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+            </a> 
+            <a href="#skills" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Skills
+            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+            </a> 
+            <a href="#testimonials" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Testimonials
+            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+            </a> 
+            <a href="#Blog" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Blogs
+            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            </nav>
+            
+            <div class="flex items-center">
+                <button class="hidden md:block rounded-full bg-gradient-to-r from-[#261540] to-[#7243d2] px-4 py-2 text-sm hover:text-primary transition whitespace-nowrap hover:bg-gradient-to-r hover:from-[#7243d2] hover:to-[#261540]">Hire Me!</button>
+                <button class="md:hidden text-white text-xl" id="openMenu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 scroll-mt-24 pb-20 mode bg-gradient-to-r from-[#170C24] to-[#261540] fade-in">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="absolute inset-0 flex items-center justify-center lg:text-12xl md:text-8xl opacity-50 animate-bounce">
+                <span class="text-outline">HI</span>
+            </div>
+
+            <div class="md:w-1/2 mb-10 md:mb-0 relative z-0 hero-content">
+                <h4 class="text-2xl md:text-3xl text-white font-semibold mb-2">I am Noshal</h4>
+                <h3 class="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary pt-2 mb-6 bg-gradient-to-r from-purple-600 to-white bg-clip-text text-transparent hero-title">Next-Level Web Developer</h3>
+                <p class="text-white mb-8 max-w-md text-sm md:text-base">I break down complex user experience problems to create integrity focussed solutions that connect billions of people.</p>
+                <div class="flex flex-wrap gap-4 hero-buttons">
+                    <button class="border border-purple-600 px-4 py-2 md:px-6 md:py-3 rounded-full text-purple-600 hover:bg-purple-600 hover:text-white transition" onclick="downloadFile('noshalresume.pdf')">Download CV <i class="fa fa-download ml-2" aria-hidden="true"></i></button>
+                    <div class="flex space-x-2">
+                        <button class="w-8 h-8 md:w-10 md:h-10 flex justify-center items-center border border-purple-600 text-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition"><i class="fab fa-twitter"></i></button>
+                        <button class="w-8 h-8 md:w-10 md:h-10 flex justify-center items-center border border-purple-600 text-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition"><i class="fa fa-globe"></i></button>
+                        <button class="w-8 h-8 md:w-10 md:h-10 flex justify-center items-center border border-purple-600 text-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition"><i class="fab fa-linkedin"></i></button>
+                        <button class="w-8 h-8 md:w-10 md:h-10 flex justify-center items-center border border-purple-600 text-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition"><i class="fab fa-github"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center hero-image">
+                <div class="overflow-hidden mode2 rounded-2xl">
+                    <img 
+                        src="/Pics/mine.jpg" 
+                        alt="Profile Image"
+                        class="animated-image w-64 h-64 sm:w-40 sm:h-30 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-2xl shadow-lg hover:border-primary-color  transition-transform duration-500 rotate-[2deg]"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="home1" class="pt-4 pb-2 bg-gradient-to-r from-[#170C24] to-[#261540] mode">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4 stats-container">
+                <div class="p-4 rounded-lg shadow-md text-center w-full sm:w-5/12 md:w-3/12 lg:w-3/12 xl:w-2/12 flex items-center stats-box">
+                    <span class="text-4xl md:text-5xl font-bold text-white">1+</span>
+                    <p class="text-white mt-2 pl-4 text-sm md:text-base">Years of Experience</p>
+                </div>
+                <div class="p-4 rounded-lg shadow-md text-center w-full sm:w-5/12 md:w-3/12 lg:w-3/12 xl:w-2/12 flex items-center stats-box">
+                    <span class="text-4xl md:text-5xl font-semibold text-white">10+</span>
+                    <p class="text-white mt-2 pl-4 text-sm md:text-base">Projects Completed</p>
+                </div>
+                <div class="p-4 rounded-lg shadow-md text-center w-full sm:w-5/12 md:w-3/12 lg:w-3/12 xl:w-2/12 flex items-center stats-box">
+                    <span class="text-4xl md:text-5xl font-bold text-white">1K</span>
+                    <p class="text-white mt-2 pl-4 text-sm md:text-base">Happy Clients</p>
+                </div>
+                <div class="p-4 rounded-lg shadow-md text-center w-full sm:w-5/12 md:w-3/12 lg:w-3/12 xl:w-2/12 flex items-center stats-box">
+                    <span class="text-4xl md:text-5xl font-bold text-white">1+</span>
+                    <p class="text-white mt-2 pl-4 text-sm md:text-base">Years of Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-black scroll-mt-24 lg:px-10 fade-in">
+        <div class="container  px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-white bg-clip-text text-transparent">My Quality Services</h2>
+                <p class="text-white max-w-2xl mx-auto px-4">We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.</p>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-col">
+                <div class="service-card bg-black p-6 md:p-8 rounded-lg mode1 hover:bg-gradient-to-r hover:from-purple-600 hover:to-[#261540] hover:text-white shadow-md hover:shadow-lg transition flex flex-col md:flex-row items-center md:items-start">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <span class="text-xl font-semibold mr-4 text-purple-600 hover:text-white">01</span>
+                        <span class="text-xl md:text-2xl font-semibold whitespace-nowrap text-white">Responsive Design</span>
+                    </div>
+                    <p class="text-white text-lg md:text-xl ml-0 md:ml-12 mt-2 md:mt-0">Ensure your website looks great on any device, with layouts that adapt to different screen sizes seamlessly.</p>
+                    <a href=""><i class="fas fa-arrow-right text-white ml-0 md:ml-8 m-2 hover:rotate-45 text-center" aria-hidden="true" style="transform: rotate(-45deg);"></i></a>
+                </div>
+                
+                <hr class="border-t border-purple-600">
+                
+                <!-- Repeat for other service cards with similar responsive adjustments -->
+                <div class="service-card bg-black p-6 md:p-8 rounded-lg mode1 shadow-md hover:shadow-lg hover:bg-gradient-to-r hover:from-purple-600 hover:to-[#261540] hover:text-white transition flex flex-col md:flex-row items-center md:items-start">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <span class="text-xl font-semibold mr-4 text-purple-600 hover:text-white">02</span>
+                        <span class="text-xl md:text-2xl font-semibold whitespace-nowrap text-white">CMS Development</span>
+                    </div>
+                    <p class="text-white text-lg md:text-xl ml-0 md:ml-12 mt-2 md:mt-0">Set up user-friendly CMS solutions like WordPress or custom-built options so clients can manage content easily.</p>
+                    <a href=""><i class="fas fa-arrow-right text-white ml-0 md:ml-8 m-2 hover:rotate-45 text-center" aria-hidden="true" style="transform: rotate(-45deg);"></i></a>
+                </div>
+                
+                <hr class="border-t border-purple-600">
+                <div class="flex flex-col">
+                <div class="service-card bg-black p-6 md:p-8 rounded-lg mode1 hover:bg-gradient-to-r hover:from-purple-600 hover:to-[#261540] hover:text-white shadow-md hover:shadow-lg transition flex flex-col md:flex-row items-center md:items-start">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <span class="text-xl font-semibold mr-4 text-purple-600 hover:text-white">03</span>
+                        <span class="text-xl md:text-2xl font-semibold whitespace-nowrap text-white">API Integrations</span>
+                    </div>
+                    <p class="text-white text-lg md:text-xl ml-0 md:ml-12 mt-2 md:mt-0">Build and integrate APIs to connect websites with third-party applications, enhancing functionality and performance.</p>
+                    <a href=""><i class="fas fa-arrow-right text-white ml-0 md:ml-8 m-2 hover:rotate-45 text-center" aria-hidden="true" style="transform: rotate(-45deg);"></i></a>
+                </div>
+                
+                <hr class="border-t border-purple-600">
+                
+                <!-- Repeat for other service cards with similar responsive adjustments -->
+                <div class="service-card bg-black p-6 md:p-8 rounded-lg mode1 shadow-md hover:shadow-lg hover:bg-gradient-to-r hover:from-purple-600 hover:to-[#261540] hover:text-white transition flex flex-col md:flex-row items-center md:items-start">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <span class="text-xl font-semibold mr-4 text-purple-600 hover:text-white">04</span>
+                        <span class="text-xl md:text-2xl font-semibold whitespace-nowrap text-white">Website Redesign</span>
+                    </div>
+                    <p class="text-white text-lg md:text-xl ml-0 md:ml-12 mt-2 md:mt-0">Refresh outdated websites with modern, appealing designs that align with current brand goals and user expectations.</p>
+                    <a href=""><i class="fas fa-arrow-right text-white ml-0 md:ml-8 m-2 hover:rotate-45 text-center" aria-hidden="true" style="transform: rotate(-45deg);"></i></a>
+                </div>
+                
+                <hr class="border-t border-purple-600">
+               <div class="flex flex-col">
+                <div class="service-card bg-black p-6 md:p-8 rounded-lg mode1 hover:bg-gradient-to-r hover:from-purple-600 hover:to-[#261540] hover:text-white shadow-md hover:shadow-lg transition flex flex-col md:flex-row items-center md:items-start">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <span class="text-xl font-semibold mr-4 text-purple-600 hover:text-white">05</span>
+                        <span class="text-xl md:text-2xl font-semibold whitespace-nowrap text-white">App Development</span>
+                    </div>
+                    <p class="text-white text-lg md:text-xl ml-0 md:ml-12 mt-2 md:mt-0">Create intuitive and functional mobile applications for iOS and Android platforms with seamless user experiences.</p>
+                    <a href=""><i class="fas fa-arrow-right text-white ml-0 md:ml-8 m-2 hover:rotate-45 text-center" aria-hidden="true" style="transform: rotate(-45deg);"></i></a>
+                </div>
+                
+                <hr class="border-t border-purple-600">
+                
+                <!-- Repeat for other service cards with similar responsive adjustments -->
+                <div class="service-card bg-black p-6 md:p-8 rounded-lg mode1 shadow-md hover:shadow-lg hover:bg-gradient-to-r hover:from-purple-600 hover:to-[#261540] hover:text-white transition flex flex-col md:flex-row items-center md:items-start">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <span class="text-xl font-semibold mr-4 text-purple-600 hover:text-white">06</span>
+                        <span class="text-xl md:text-2xl font-semibold whitespace-nowrap text-white">SEO Optimization</span>
+                    </div>
+                    <p class="text-white text-lg md:text-xl ml-0 md:ml-12 mt-2 md:mt-0">Improve your website's visibility on search engines with targeted strategies that drive organic traffic and conversions.</p>
+                    <a href=""><i class="fas fa-arrow-right text-white ml-0 md:ml-8 m-2 hover:rotate-45 text-center" aria-hidden="true" style="transform: rotate(-45deg);"></i></a>
+                </div>
+                
+                <hr class="border-t border-purple-600">
+            </div>
+        </div>
+    </section>
+<section id="portfolio" class="py-20 scroll-mt-24 mode lg:px-10 bg-gradient-to-r from-[#170C24] to-[#261540] fade-in" >
+  <div class="container  px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-[#FFFF] bg-clip-text text-transparent">My Recent Works</h2>
+      <p class="text-white max-w-2xl mx-auto">We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.</p>
+      <div class="w-20 h-1 bg-primary mx-auto mt-4"></div>
+    </div>
+
+    <div class="portfolio-filter flex justify-center mb-12">
+      <div class="flex flex-wrap justify-center mode gap-2 bg-black rounded-full m-6 p-2">
+        <button class="filter-btn px-4 py-2  text-white rounded-full " data-category="all">All</button>
+        <button class="filter-btn px-4 py-2 mode bg-black  text-white rounded-md" data-category="uxui">UX/UI</button>
+        <button class="filter-btn px-4 py-2 mode bg-black text-white rounded-md" data-category="branding">Branding</button>
+        <button class="filter-btn px-4 py-2 mode bg-black text-white rounded-md" data-category="apps">Apps</button>
+      </div>
+    </div>
+
+    <!-- Portfolio items container -->
+    <div id="portfolio-items" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6"></div>
+  </div>
+</section>
+<!-- Experience & Education Section -->
+    <section id="experience" class="py-20 pl-2 pr-2 bg-black w-full scroll-mt-24  ">
+        
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Experience Column -->
+                <div class=" ">
+                  <div class="flex display-inline">
+                    <i class="fas fa-medal mb-8 text-4xl lg:text-6xl md:text-5xl sm:text-4xl bg-gradient-to-r from-purple-600 to-[#FFFF] bg-clip-text text-transparent" aria-hidden="true"></i>
+                    <h3 class=" font-bold mb-8 text-4xl md:text-5xl lg:text-6xl sm:text-4xl bg-gradient-to-r from-purple-600 to-[#FFFF] bg-clip-text text-transparent ">Experience</h3>
+                    </div>
+                    <div class="relative animate-[fadeIn_2s_forwards] ">
+                        
+                        <div class="mb-12 bg-gradient-to-r p-6 rounded-lg from-[#170C24] to-[#261540] mode hover:bg-gradient-to-r hover:from-purple-600 hover:to-[#FFFF]">
+                            <span class=" text-purple-600 text-sm font-bold  rounded hover:text-white">2025 - Present</span>
+                       
+                        <h2 class="lg:text-2xl md:text-1xl sm:text-xl font-bold text-white mb-2 ">Internship</h4>
+                        <p class="text-secondary font-medium text-white mb-2">Dynsof,Pakistan </p>
+</div>
+                    </div>
+                    
+                    <div class="relative ">
+                        
+                        <div class=" mb-12  bg-gradient-to-r p-6 rounded-lg from-[#170C24] to-[#261540] mode hover:bg-gradient-to-r hover:from-purple-600 hover:to-[#FFFF]">
+                            <span class="text-purple-600 text-sm font-bold rounded hover:text-white">2023 - 2024</span>
+                       
+                        <h4 class=" font-bold text-white mb-2 lg:text-2xl md:text-1xl sm:text-xl">Web Design Course</h4>
+                        <p class="text-secondary font-medium text-white mb-2">GGCP</p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                       
+                        <div class=" bg-gradient-to-r p-6 rounded-lg from-[#170C24] to-[#261540] mode hover:bg-gradient-to-r hover:from-purple-600 hover:to-[#FFFF]">
+                            <span class="text-purple-600 text-sm font-bold rounded hover:text-white">2022 - 2022</span>
+                        
+                        <h4 class="font-bold text-white mb-2 lg:text-2xl md:text-1xl sm:text-xl">MS Office</h4>
+                        <p class="text-secondary font-medium text-white mb-2">Superior College Daska</p>
+                       </div>
+                    </div>
+                </div>
+                
+                <!-- Education Column -->
+                <div class="">
+                    <div class="flex display-inline">
+                    <i class="fa fa-graduation-cap text-4xl mb-8 lg:text-6xl md:text-4xl sm:text-4xl bg-gradient-to-r from-purple-600 to-[#FFFF] bg-clip-text text-transparent" aria-hidden="true"></i>
+                    <h3 class="font-bold mb-8 text-4xl lg:text-6xl md:text-5xl sm:text-4xl bg-gradient-to-r from-purple-600 to-[#FFFF] bg-clip-text text-transparent">Education</h3>
+                    </div>
+                    <div class="relative ">
+                        
+                        <div class="mb-12 bg-gradient-to-r p-6 mode rounded-lg from-[#170C24] to-[#261540] hover:bg-gradient-to-r hover:from-purple-600 hover:to-[#FFFF]">
+                            <span class="text-purple-600 text-sm font-bold rounded hover:text-white">2022 - 2026</span>
+                        
+                        <h4 class="lg:text-2xl md:text-1xl sm:text-xl font-bold text-white mb-2">BSCS</h4>
+                        <p class="ttext-secondary font-medium  text-white mb-2"> University OF Punjab</p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative ">
+                        
+                        <div class="mb-12 bg-gradient-to-r p-6 mode rounded-lg from-[#170C24] to-[#261540] hover:bg-gradient-to-r hover:from-purple-600 hover:to-[#FFFF]">
+                            <span class="text-purple-600 text-sm font-bold rounded hover:text-white">2020 - 2022</span>
+                        
+                        <h4 class="lg:text-2xl md:text-1xl sm:text-xl font-bold text-white mb-2">FSC Engineering</h4>
+                        <p class="text-secondary font-medium text-white mb-2">Superior College,Daska</p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative ">
+                        
+                        <div class=" bg-gradient-to-r p-6 mode rounded-lg from-[#170C24] to-[#261540] hover:bg-gradient-to-r hover:from-purple-600 hover:to-[#FFFF]">
+                            <span class="text-purple-600 text-sm font-bold rounded hover:text-primary">2018-2020</span>
+                        
+                        <h4 class="lg:text-2xl md:text-1xl sm:text-xl font-bold text-white mb-2">Matric </h4>
+                        <p class="text-secondary font-medium text-white mb-2">Govt HIGH SCHOOL</p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Skill-->
+   <section id="skills" class="py-20 mode bg-[#170C24] w-full px-10 md:px-5 sm:px-5"> <div class="container scroll-mt-24  mx-auto  fade-in"> 
+    <!-- Section Title -->
+     <div class="text-center mb-16 scroll-mt-24 "> 
+        <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-[#FFFF] bg-clip-text text-transparent">My Skills</h2>
+         <p class="text-white max-w-2xl mx-auto"> We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers. </p> 
+         <div class="w-20 h-1 bg-primary mx-auto mt-4"></div> </div>
+          <!-- Skill Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-center"> 
+            <!-- Skill Item --> 
+             <div class="group text-center bg-[#170C18] opacity-50 rounded-2xl"> 
+                <div class="overflow-hidden w-24 h-24 mx-auto mb-4 transition-transform duration-300 transform m-8 group-hover:scale-110"> 
+                    <img src="/Pics/figma2.png" alt="Figma" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+                 </div> 
+                 <p class="text-lg font-semibold text-white hover:text-purple-600 opacity-100">80%</p>
+                 </div> 
+                 <!--Item 2-->
+                 <div class="group text-center bg-[#170C18] opacity-50 rounded-2xl"> 
+                    <div class="overflow-hidden w-24 h-24 mx-auto mb-4 m-8 transition-transform duration-300 transform group-hover:scale-110">
+     <img src="/Pics/js.jpg" alt="Sketch" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300" /> 
+        </div> 
+        <p class="text-lg font-semibold text-white hover:text-purple-600 opacity-100">85%</p> 
+         <!--Item 3-->
+        </div> 
+        <div class="group text-center bg-[#170C18] opacity-50 rounded-2xl"> 
+        <div class="overflow-hidden w-24 h-24 mx-auto mb-4 m-8 transition-transform duration-300 transform group-hover:scale-110">
+         <img src="/Pics/xd.png" alt="Adobe XD" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300" /> 
+        </div> 
+        <p class="text-lg font-semibold text-white hover:text-purple-600 opacity-100">99%</p>
+     </div> 
+      <!--Item 4-->
+     <div class="group text-center bg-[#170C18] opacity-50 rounded-2xl">
+         <div class="overflow-hidden w-24 h-24 mx-auto mb-4 m-8 transition-transform duration-300 transform group-hover:scale-110"> 
+            <img src="/Pics/wp.png" alt="WordPress" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+         </div> 
+         <p class="text-lg font-semibold text-white hover:text-purple-600 opacity-100">89%
+         </p> 
+        </div>
+        <!--Item 5-->
+        
+          <div class="group text-center bg-[#170C18] opacity-50 rounded-2xl"> 
+            <div class="overflow-hidden r w-24 h-24 mx-auto mb-4 m-8 transition-transform duration-300 transform group-hover:scale-110"> 
+            <img src="/Pics/react.png" alt="React" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300" /> 
+        </div>
+         <p class="text-lg font-semibold text-white hover:text-purple-600 opacity-100">95%</p>
+         </div>
+
+      
+        
+       
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonials Section -->
+  <section id="testimonials" class="lg:py-20 md:py-10 sm:py-15 bg-black scroll-mt-24 fade-in  w-full ">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row lg:items-start justify-between mb-16">
+        
+        <!-- Heading -->
+        <div class="lg:w-2/4 text-center lg:text-left mb-12 m-2 lg:mb-0">
+          <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-[#FFFF] bg-clip-text text-transparent lg:whitespace-nowrap ">My Client's Stories</h2>
+          <p class="text-white text-gray-600">Empowering people in a new digital journey with my super services</p>
+          <div class="w-20 h-1 bg-blue-500 mt-4 lg:mx-0 mx-auto"></div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="lg:w-2/4 ">
+          <div id="testimonialWrapper" class="grid md:grid-cols-2  gap-8 transition-all duration-500 transform  opacity-100 translate-x-0">
+            <!-- JavaScript will inject testimonial cards here -->
+          </div>
+
+          <!-- Dot Navigation -->
+          <div class="flex justify-center mt-8 space-x-3">
+            <button class="w-3 h-3 rounded-full bg-blue-500" onclick="goToSlide(0)" id="dot-0"></button>
+            <button class="w-3 h-3 rounded-full bg-gray-300" onclick="goToSlide(1)" id="dot-1"></button>
+            <button class="w-3 h-3 rounded-full bg-gray-300" onclick="goToSlide(2)" id="dot-2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--Blog-->
+  <section id="Blog" class="bg-[#170C22] scroll-mt-24 fade-in m-0 mode lg:px-10  w-full">
+    <div class="container  px-4 py-8">
+        <!-- Blo Section -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold  mb-4  bg-gradient-to-r from-purple-600 to-[#FFFF] bg-clip-text text-transparent">Recent Blogs</h1>
+            <p class="text-lg text-white max-w-2xl mx-auto">
+                We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
+            </p>
+          </div>
+
+
+        <!-- Blog Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-container">
+            <!-- Blog Card 1 -->
+            <div class="blog-card bg-[url('/Pics/lp.jpg')] bg-cover h-full w-full rounded-lg overflow-hidden shadow-md tutorial fade-in" data-category="tutorial">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class=" text-xs font-semibold px-2.5 py-0.5 rounded text-xs font-semibold px-2.5 py-0.5 text-white rounded rounded-full bg-gradient-to-r from-[#261540] to-[#7243d2] max-w-[50%] p-4 hover:text-primary transition whitespace-nowrap hover:bg-gradient-to-r hover:from-[#7243d2] hover:to-[#261540]">TUTORIAL</span>
+                        
+                    </div>
+                    <div class="bg-[#170C40] mt-[50%] rounded-2xl p-6 text-purple-600     hover:text-primary transition  hover:bg-gradient-to-r hover:from-[#7243d2] hover:to-[#261540]">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center  text-sm">
+                          <span class="  lg:ml-4">Oct 01, 2022</span>
+                            
+                        </div>
+                        <div class="flex items-center">
+                        <i class="far fa-comment  ">
+                          
+                        </i>
+                        <span class="ml-2">Comment(0)</span>
+                            </div>
+                           
+                    </div>
+                     <h3 class="text-2xl font-bold text-white text-center m-2">Top 10 UI/UX Designers</h3>
+                     </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+<div class="blog-card bg-[url('/Pics/man2.jpg')] bg-cover h-full w-full rounded-lg overflow-hidden shadow-md tutorial fade-in" data-category="tips">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded text-xs font-semibold px-2.5 py-0.5 text-white rounded rounded-full bg-gradient-to-r from-[#261540] to-[#7243d2] max-w-[50%] p-4 hover:text-primary transition whitespace-nowrap hover:bg-gradient-to-r hover:from-[#7243d2] hover:to-[#261540]">TIPS</span>
+                        
+                    </div>
+                    <div class="bg-[#170C40] mt-[50%] rounded-2xl p-6 text-purple-600 hover:text-primary transition  hover:bg-gradient-to-r hover:from-[#7243d2] hover:to-[#261540]">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center  text-sm">
+                          <span class="  lg:ml-4">Nov 01, 2022</span>
+                            
+                        </div>
+                        <div class="flex items-center">
+                        <i class="far fa-comment  ">
+                          
+                        </i>
+                        <span class="ml-2">Comment(0)</span>
+                            </div>
+                           
+                    </div>
+                     <h3 class="text-2xl font-bold text-white text-center m-2">App Development Guides</h3>
+                     </div>
+                </div>
+            </div>
+
+
+
+
+            
+
+            <!-- Blog Card 3 -->
+<div class="blog-card bg-[url('/Pics/girl.jpg')] bg-cover h-full w-full rounded-lg overflow-hidden shadow-md tutorial fade-in" data-category="freebies">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class=" text-xs font-semibold px-2.5 py-0.5 text-white rounded rounded-full bg-gradient-to-r from-[#261540] to-[#7243d2] max-w-[50%] p-4 hover:text-primary transition whitespace-nowrap hover:bg-gradient-to-r hover:from-[#7243d2] hover:to-[#261540]">FREEBIES</span>
+                        
+                    </div>
+                    <div class="bg-[#170C40] mt-[50%] rounded-2xl p-6 text-purple-600 hover:text-primary transition  hover:bg-gradient-to-r hover:from-[#7243d2] hover:to-[#261540]">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center  text-sm">
+                          <span class="  lg:ml-4">Dec 15, 2022</span>
+                            
+                        </div>
+                        <div class="flex items-center">
+                        <i class="far fa-comment  ">
+                          
+                        </i>
+                        <span class="ml-2">Comment(0)</span>
+                            </div>
+                           
+                    </div>
+                     <h3 class="text-2xl font-bold text-white text-center m-2">Free UI Kit Collection</h3>
+                     </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+  </section>
+  <section id="contact" class="py-20 bg-black text-white scroll-mt-24 fade-in w-full">
+  <div class="container mx-auto px-6 ">
+    <!-- Title on Left -->
+     
+    
+    <!-- Flex Container -->
+    <div class="flex flex-col md:flex-row gap-12 ">
+      <!-- Left Column: Send Message Form -->
+      <div class="md:w-1/2 order-2 md:order-1 bg-[#170C24] p-8 rounded-2xl">
+<h2 class="lg:text-6xl md:text-4xl sm:text-4xl mb-4 text-bold text-center lg:m-4 lg:p-8 bg-gradient-to-r from-purple-600 to-[#FFFF] bg-clip-text  text-transparent ">Let's Work Together!</h2>
+      <p class="text-secondary max-w-2xl text-white lg:pl-4 lg:pr-4">
+        I design and code beautifully simple things and I love what I do. Just simple like that!
+      </p>
+      
+
+        <h3 class="text-2xl font-semibold mb-6 text-white mt-6">Send Message</h3>
+
+        <form class="space-y-6">
+          <!-- Names -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="firstName" class="block mb-2 font-medium text-white">First Name</label>
+              <input type="text" id="firstName" placeholder="e.g. First Name"
+                class="w-full px-4 py-3 border bg-black  border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+            </div>
+            <div>
+              <label for="lastName" class="block mb-2 font-medium text-white">Last Name</label>
+              <input type="text" id="lastName" placeholder="e.g. Last Name" 
+                class="w-full lg:px-4 py-3 border bg-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+            </div>
+          </div>
+
+          <!-- Email + Phone -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="email" class="block mb-2 font-medium text-white">Email Address</label>
+              <input type="email" id="email" placeholder="you@example.com"
+                class="w-full px-4 py-3 border bg-black  border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+            </div>
+            <div>
+              <label for="phone" class="block mb-2 font-medium text-white">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+123456789"
+                class="w-full px-4 py-3 border bg-black  border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+            </div>
+          </div>
+
+          <!-- Service Dropdown -->
+          <div>
+            <label for="service" class="block mb-2 font-medium text-white">Choose Service</label>
+            <select id="service"
+              class="w-full px-4 py-3 bg-black border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+              <option value="">Select a service</option>
+              <option value="design">UI/UX Design</option>
+              <option value="development">Web Development</option>
+              <option value="cms">CMS Development</option>
+              <option value="api">API Integration</option>
+              <option value="redesign">Website Redesign</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div>
+            <label for="message" class="block mb-2 font-medium">Message</label>
+            <textarea id="message" rows="5" placeholder="Write your message here..."
+              class="w-full px-4 py-3 border bg-black  border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button class="rounded-full bg-gradient-to-r from-[#261540] to-[#7243d2] max-w-[50%] p-4 hover:text-primary transition whitespace-nowrap hover:bg-gradient-to-r hover:from-[#7243d2] hover:to-[#261540] lg:text-2xl md:text-2xl sm:max-w-[70%]">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Right Column: Contact Info -->
+      <div class="md:w-1/2 order-1 md:order-2  ">
+        <h3 class="text-2xl font-bold mb-36 lg:pt-48 "></h3>
+
+        <div class="space-y-6 lg:ml-32 md:pl-2 sm:pl-2">
+          <div class="flex items-start pb-8 ">
+            <div
+              class="w-12 h-12 bg-gradient-to-r from-[#261540] to-[#7243d2] text-primary rounded-full flex items-center justify-center mr-4 mt-1">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div >
+              <h4 class="font-semibold ">Phone</h4>
+              <p class="text-white lg:text-2xl md:text-2xl sm:text-1xl ">+92 340 4005981</p>
+            </div>
+          </div>
+
+          <div class="flex items-start  pb-8">
+            <div
+              class="w-12 h-12 bg-gradient-to-r from-[#261540] to-[#7243d2] text-primary rounded-full flex items-center justify-center mr-4 mt-1">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold">Email</h4>
+              <p class=" lg:text-2xl md:text-2xl sm:text-1xl ">noshalprincess@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-start pb-8">
+            <div
+              class="w-12 h-12 bg-gradient-to-r from-[#261540] to-[#7243d2] text-primary rounded-full flex items-center justify-center mr-4 mt-1">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold">Address</h4>
+              <p class=" lg:text-2xl md:text-2xl sm:text-1xl">Pasrur,Sialkot,Pakistan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+    <footer class="bg-[#170C22] text-white py-12 w-full">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col items-center text-center">
+      
+      <!-- Logo -->
+      <img src="/Pics/NF.jpg" alt="Logo" class="w-16 mb-6">
+
+      <!-- Navigation Links -->
+      <div class="flex flex-wrap justify-center gap-4 sm:gap-6 my-6">
+        <a href="#home" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">
+          Home
+          <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#services" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">
+          Services
+          <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#portfolio" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">
+          Portfolio
+          <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#experience" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">
+          Experience
+          <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#skills" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">
+          Skills
+          <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#testimonials" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">
+          Testimonials
+          <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </div>
+
+      <!-- Footer Note -->
+      <p class="text-gray-400 text-sm sm:text-base">
+        © 2024 All rights reserved by 
+        <b class="text-white hover:text-purple-500 cursor-pointer">ThemeJunction</b>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<div id="mode" class="w-[45px] h-[35px] bg-gradient-to-r from-[#261540] to-[#7243d2]  rounded-l-full  fixed  flex justify-center items-center top-[49%] right-0">
+  <i class="fas fa-lightbulb-o text-white" aria-hidden="true"></i>
+</div>
+
+
+   
+</body>
+</html>
+   
