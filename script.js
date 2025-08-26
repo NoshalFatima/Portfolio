@@ -440,6 +440,12 @@ document.addEventListener("DOMContentLoaded", () => {
         closeMenuButton.addEventListener('click', closeMenu);
         menuOverlay.addEventListener('click', closeMenu);
         
+        // Close menu when clicking on links
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+        
 function downloadFile(filename) {
     const link = document.createElement("a");
     link.href = filename; // e.g., 'noshalresume.pdf'
@@ -448,5 +454,6 @@ function downloadFile(filename) {
     link.click();
 
     document.body.removeChild(link);}
+
 
 
