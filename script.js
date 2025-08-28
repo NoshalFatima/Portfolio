@@ -209,10 +209,11 @@ function renderItems(category) {
       <div class="rounded-lg overflow-hidden shadow-md  hover:shadow-xl border-t-[32px] border-l-[32px] border-r-[32px] border-[#170C24] transition bg-white group cursor-pointer max-w-[100%] relative">
         <div class="portfolio-bg max-h-[100%]" style="
           background-image: url('${item.image}');
-          background-size: contain;
+          background-size: cover;
           background-position: center;
           position: relative;
-          height:245px;
+          width:full;
+          
         ">
           <!-- Full-width gradient button at the bottom with Font Awesome icon -->
           <div class="absolute bottom-0  p-4   flex justify-between items-center   rounded-lg 
@@ -455,6 +456,7 @@ function downloadFile(filename) {
     link.click();
 
     document.body.removeChild(link);}
+
 
 
 
