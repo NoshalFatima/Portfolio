@@ -206,7 +206,7 @@ function renderItems(category) {
 
   items.forEach(item => {
     const html = `
-      <div class="rounded-lg overflow-hidden shadow-md lg:ml-20 hover:shadow-xl border-t-[32px] border-l-[32px] border-r-[32px] border-[#170C24] transition bg-white group cursor-pointer max-w-[100%] relative">
+      <div class="rounded-lg overflow-hidden shadow-md lg:ml-20 hover:shadow-xl border-t-[32px] border-l-[32px] border-r-[32px] border-[#170C24] transition bg-white group cursor-pointer  relative">
         <div class="portfolio-bg  lg:h-[255px]  lg:w-[300px]  " style="
           background-image: url('${item.image}');
           background-size: contain;
@@ -455,6 +455,7 @@ function downloadFile(filename) {
     link.click();
 
     document.body.removeChild(link);}
+
 
 
 
