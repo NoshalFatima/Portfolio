@@ -49,8 +49,6 @@ tailwind.config = {
                         dark: '#0f172a',
                         light: '#f8fafc'
                     },
-                            spacing{
-                                        '25':'6.25rem'},
                     fontSize: {
                     '12xl': '12rem',
                      },
@@ -98,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const data = {
     all: [
       {
-       image: 'Pics/Deloitte.jpg',
+       image: '/Pics/Deloitte.jpg',
         title: 'Deloitte ',
          location: 'MyJuru App',
         desc: 'Project was about precision and Information',
@@ -109,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         textColor: 'text-white'
       },
       {
-        image: 'Pics/sebas.jpg',
+        image: '/Pics/sebas.jpg',
         title: 'New Age',
         location: 'MyJuru App',
         desc: 'Project was about Precision and Information',
@@ -120,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
         textColor: 'text-white'
       },
       {
-        image: 'Pics/better.jpg',
+        image: '/Pics/better.jpg',
         title: 'Sebastians',
         location: 'Cosmic Sports Platform',
         desc: 'Project was about precision and Information',
@@ -131,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         textColor: 'text-white'
       },
        {
-       image: 'Pics/grow.jpg',
+       image: '/Pics/grow.jpg',
         title: 'Mochnicis',
         location: 'Deloitte: France',
         desc: 'Project was about precision and Information',
@@ -144,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     uxui: [
       {
-        image: 'Pics/better.jpg',
+        image: '/Pics/better.jpg',
         title: 'Sebastics',
         location: 'FinTech Dashboard',
         desc: 'Crafting user-centric banking interfaces for top-tier clients',
@@ -157,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     branding: [
       {
-       image: 'Pics/Deloitte.jpg',
+       image: '/Pics/Deloitte.jpg',
         title: 'Deloitte ',
          location: 'MyJuru App',
         desc: 'Project was about precision and Information',
@@ -168,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         textColor: 'text-white'
       },
       {
-       image: 'Pics/grow.jpg',
+       image: '/Pics/grow.jpg',
         title: 'Mochnicis',
         location: 'Deloitte: France',
         desc: 'Project was about precision and Information',
@@ -181,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     apps: [
      {
-        image: 'Pics/better.jpg',
+        image: '/Pics/better.jpg',
         title: 'Sebastics',
         location: 'FinTech Dashboard',
         desc: 'Crafting user-centric banking interfaces for top-tier clients',
@@ -208,13 +206,12 @@ function renderItems(category) {
 
   items.forEach(item => {
     const html = `
-      <div class="rounded-lg overflow-hidden shadow-md lg:h-[455px] max-h-[100%] lg:ml-20 hover:shadow-xl border-t-[32px] border-l-[32px] border-r-[32px] border-[#170C24] transition bg-white group cursor-pointer  relative">
-        <div class="portfolio-bg  lg:h-[455px]  lg:w-[400px]  " style="
+      <div class="rounded-lg overflow-hidden shadow-md h-[500px] lg:ml-10 hover:shadow-xl border-t-[32px] border-l-[32px] border-r-[32px] border-[#170C24] transition bg-white group cursor-pointer max-w-[100%] relative">
+        <div class="portfolio-bg max-h-[100%] max-w-[500px]" style="
           background-image: url('${item.image}');
           background-size: contain;
           background-position: center;
           position: relative;
-          
         ">
           <!-- Full-width gradient button at the bottom with Font Awesome icon -->
           <div class="absolute bottom-0  p-4   flex justify-between items-center   rounded-lg 
@@ -283,53 +280,53 @@ if (defaultButton) {
 
 const testimonials = [
   {
-    image: 'Pics/cosmetic.png',
+    image: '/Pics/cosmetic.png',
     
     subtitle: "Sports Platform",
-    image1:"Pics/cosmetic man.jpg",
+    image1:"/Pics/cosmetic man.jpg",
     quote: "Taylor is a professional Designer he really helps my business by providing value to my business.",
     name: "Tim Bailey",
     role: "SEO Specialist, Theme Junction"
   },
   {
-    image: "Pics/company.png",
+    image: "/Pics/company.png",
     subtitle: "Tech Startup",
-     image1:"Pics/company man.jpg",
+     image1:"/Pics/company man.jpg",
     quote: "Taylor is a professional Designer he really helps my business by providing value to my business.",
     name: "Brandon Frason",
     role: "Senior Software Dev,Costemic Sport"
   },
   
   {
-    image: "Pics/company.png",
+    image: "/Pics/company.png",
     subtitle: "Tech Startup",
-     image1:"Pics/company man.jpg",
+     image1:"/Pics/company man.jpg",
     quote: "Taylor is a professional Designer he really helps my business by providing value to my business.",
     name: "Brandon Frason",
     role: "Senior Software Dev,Costemic Sport"
   },
   {
-    image: 'Pics/cosmetic.png',
+    image: '/Pics/cosmetic.png',
     
     subtitle: "Sports Platform",
-    image1:"Pics/cosmetic man.jpg",
+    image1:"/Pics/cosmetic man.jpg",
     quote: "Taylor is a professional Designer he really helps my business by providing value to my business.",
     name: "Tim Bailey",
     role: "SEO Specialist, Theme Junction"
   },
   {
-    image: 'Pics/cosmetic.png',
+    image: '/Pics/cosmetic.png',
     
     subtitle: "Sports Platform",
-    image1:"Pics/cosmetic man.jpg",
+    image1:"/Pics/cosmetic man.jpg",
     quote: "Taylor is a professional Designer he really helps my business by providing value to my business.",
     name: "Tim Bailey",
     role: "SEO Specialist, Theme Junction"
   },
   {
-    image: "Pics/company.png",
+    image: "/Pics/company.png",
     subtitle: "Tech Startup",
-     image1:"Pics/company man.jpg",
+     image1:"/Pics/company man.jpg",
     quote: "Taylor is a professional Designer he really helps my business by providing value to my business.",
     name: "Brandon Frason",
     role: "Senior Software Dev,Costemic Sport"
@@ -420,8 +417,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-        // Mobile menu functionality
+// Mobile menu functionality
         const openMenuButton = document.getElementById('openMenu');
         const closeMenuButton = document.getElementById('closeMenu');
         const mobileMenu = document.getElementById('mobileMenu');
@@ -449,24 +445,26 @@ document.addEventListener("DOMContentLoaded", () => {
             link.addEventListener('click', closeMenu);
         });
         
+        // Animation on scroll
+        function checkVisibility() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect();
+                if (position.top < window.innerHeight - 100) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', checkVisibility);
+        window.addEventListener('load', checkVisibility);
+        
+
+
 function downloadFile(filename) {
     const link = document.createElement("a");
     link.href = filename; // e.g., 'noshalresume.pdf'
     link.download = filename;
     document.body.appendChild(link);
     link.click();
-
     document.body.removeChild(link);}
-
-
-
-
-
-
-
-
-
-
-
-
-
