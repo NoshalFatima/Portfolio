@@ -208,7 +208,7 @@ function renderItems(category) {
     const html = `
       <div class="rounded-lg overflow-hidden shadow-md h-[420px] lg:ml-10 lg:mr-5 hover:shadow-xl border-t-[32px] border-l-[32px] border-r-[32px] border-[#170C24] transition bg-white group cursor-pointer  relative">
           
-        <img src="${item.image}" class="portfolio-bg h-full  w-full " style="
+        <img src="${item.image}" class="portfolio-bg h-full  w-max-[100%] " style="
           
           background-size: contain;
           background-position: center;
@@ -469,6 +469,7 @@ function downloadFile(filename) {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);}
+
 
 
 
