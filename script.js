@@ -212,6 +212,7 @@ function renderItems(category) {
           background-size: contain;
           background-position: center;
           position: relative;
+          height:245px;
         ">
           <!-- Full-width gradient button at the bottom with Font Awesome icon -->
           <div class="absolute bottom-0  p-4   flex justify-between items-center   rounded-lg 
@@ -454,6 +455,7 @@ function downloadFile(filename) {
     link.click();
 
     document.body.removeChild(link);}
+
 
 
 
