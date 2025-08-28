@@ -206,7 +206,7 @@ function renderItems(category) {
 
   items.forEach(item => {
     const html = `
-      <div class="rounded-lg items-center justify-center overflow-hidden shadow-md sm:h-[280px] h-[420px] lg:ml-12 lg:mr-6  hover:shadow-xl border-t-[32px] border-l-[32px] border-r-[32px] border-[#170C24] transition bg-black lg:w-[440px] xl:w-[600px] 2xl:w-[800px] w-full group cursor-pointer  relative">
+      <div class="rounded-lg items-center justify-center overflow-hidden shadow-md h-[420px] sm:h-[280px] lg:h-[420px] lg:ml-12 lg:mr-6  hover:shadow-xl border-t-[32px] border-l-[32px] border-r-[32px] border-[#170C24] transition bg-black lg:w-[440px] xl:w-[600px] 2xl:w-[800px] w-full group cursor-pointer  relative">
           
         <img src="${item.image}" class="portfolio-bg h-full  w-full object-cover position-center " >
           <!-- Full-width gradient button at the bottom with Font Awesome icon -->
@@ -464,6 +464,7 @@ function downloadFile(filename) {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);}
+
 
 
 
