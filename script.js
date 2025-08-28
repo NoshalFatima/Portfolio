@@ -210,7 +210,7 @@ function renderItems(category) {
           
         <img src="${item.image}" class="portfolio-bg h-full  w-full " style="
           
-          background-size: conver;
+          background-size: cover;
           background-position: center;
           position: relative;
         ">
@@ -469,6 +469,7 @@ function downloadFile(filename) {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);}
+
 
 
 
