@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const data = {
     all: [
       {
-       image: '/Pics/Deloitte.jpg',
+       image: 'Pics/Deloitte.jpg',
         title: 'Deloitte ',
          location: 'MyJuru App',
         desc: 'Project was about precision and Information',
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         textColor: 'text-white'
       },
       {
-        image: '/Pics/sebas.jpg',
+        image: 'Pics/sebas.jpg',
         title: 'New Age',
         location: 'MyJuru App',
         desc: 'Project was about Precision and Information',
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
         textColor: 'text-white'
       },
       {
-        image: '/Pics/better.jpg',
+        image: 'Pics/better.jpg',
         title: 'Sebastians',
         location: 'Cosmic Sports Platform',
         desc: 'Project was about precision and Information',
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         textColor: 'text-white'
       },
        {
-       image: '/Pics/grow.jpg',
+       image: 'Pics/grow.jpg',
         title: 'Mochnicis',
         location: 'Deloitte: France',
         desc: 'Project was about precision and Information',
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     uxui: [
       {
-        image: '/Pics/better.jpg',
+        image: 'Pics/better.jpg',
         title: 'Sebastics',
         location: 'FinTech Dashboard',
         desc: 'Crafting user-centric banking interfaces for top-tier clients',
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     branding: [
       {
-       image: '/Pics/Deloitte.jpg',
+       image: 'Pics/Deloitte.jpg',
         title: 'Deloitte ',
          location: 'MyJuru App',
         desc: 'Project was about precision and Information',
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         textColor: 'text-white'
       },
       {
-       image: '/Pics/grow.jpg',
+       image: 'Pics/grow.jpg',
         title: 'Mochnicis',
         location: 'Deloitte: France',
         desc: 'Project was about precision and Information',
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     apps: [
      {
-        image: '/Pics/better.jpg',
+        image: 'Pics/better.jpg',
         title: 'Sebastics',
         location: 'FinTech Dashboard',
         desc: 'Crafting user-centric banking interfaces for top-tier clients',
@@ -206,8 +206,8 @@ function renderItems(category) {
 
   items.forEach(item => {
     const html = `
-      <div class="rounded-lg overflow-hidden shadow-md h-[500px] lg:ml-10 hover:shadow-xl border-t-[32px] border-l-[32px] border-r-[32px] border-[#170C24] transition bg-white group cursor-pointer max-w-[100%] relative">
-        <div class="portfolio-bg max-h-[100%] max-w-[500px]" style="
+      <div class="rounded-lg overflow-hidden shadow-md h-[370px] lg:ml-10 hover:shadow-xl border-t-[32px] border-l-[32px] border-r-[32px] border-[#170C24] transition bg-white group cursor-pointer max-w-[400px] relative">
+        <div class="portfolio-bg max-h-[100%] max-w-[100%]" style="
           background-image: url('${item.image}');
           background-size: contain;
           background-position: center;
@@ -468,3 +468,4 @@ function downloadFile(filename) {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);}
+
