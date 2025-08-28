@@ -421,7 +421,7 @@
     border-color: #ccc !important;
   }
 .light-mode .service-card{
-         background: linear-gradient(to right, #7243d2, #ccc) !important;
+         background:white !important;
 }
   .light-mode h1,
   .light-mode h2,
@@ -881,4 +881,5 @@ background-color: white;
 
 
         
+
 
