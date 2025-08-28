@@ -420,7 +420,9 @@
     color: #000 !important;
     border-color: #ccc !important;
   }
-
+.light-mode .service-card{
+         background: linear-gradient(to right, #7243d2, #ccc) !important;
+}
   .light-mode h1,
   .light-mode h2,
   .light-mode h3,
@@ -874,5 +876,6 @@ background-color: white;
                 opacity: 1;
             }
         }
+
 
         
