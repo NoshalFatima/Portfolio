@@ -280,53 +280,53 @@ if (defaultButton) {
 
 const testimonials = [
   {
-    image: '/Pics/cosmetic.png',
+    image: 'Pics/cosmetic.png',
     
     subtitle: "Sports Platform",
-    image1:"/Pics/cosmetic man.jpg",
+    image1:"Pics/cosmetic man.jpg",
     quote: "Taylor is a professional Designer he really helps my business by providing value to my business.",
     name: "Tim Bailey",
     role: "SEO Specialist, Theme Junction"
   },
   {
-    image: "/Pics/company.png",
+    image: "Pics/company.png",
     subtitle: "Tech Startup",
-     image1:"/Pics/company man.jpg",
+     image1:"Pics/company man.jpg",
     quote: "Taylor is a professional Designer he really helps my business by providing value to my business.",
     name: "Brandon Frason",
     role: "Senior Software Dev,Costemic Sport"
   },
   
   {
-    image: "/Pics/company.png",
+    image: "Pics/company.png",
     subtitle: "Tech Startup",
-     image1:"/Pics/company man.jpg",
+     image1:"Pics/company man.jpg",
     quote: "Taylor is a professional Designer he really helps my business by providing value to my business.",
     name: "Brandon Frason",
     role: "Senior Software Dev,Costemic Sport"
   },
   {
-    image: '/Pics/cosmetic.png',
+    image: 'Pics/cosmetic.png',
     
     subtitle: "Sports Platform",
-    image1:"/Pics/cosmetic man.jpg",
+    image1:"Pics/cosmetic man.jpg",
     quote: "Taylor is a professional Designer he really helps my business by providing value to my business.",
     name: "Tim Bailey",
     role: "SEO Specialist, Theme Junction"
   },
   {
-    image: '/Pics/cosmetic.png',
+    image: 'Pics/cosmetic.png',
     
     subtitle: "Sports Platform",
-    image1:"/Pics/cosmetic man.jpg",
+    image1:"Pics/cosmetic man.jpg",
     quote: "Taylor is a professional Designer he really helps my business by providing value to my business.",
     name: "Tim Bailey",
     role: "SEO Specialist, Theme Junction"
   },
   {
-    image: "/Pics/company.png",
+    image: "Pics/company.png",
     subtitle: "Tech Startup",
-     image1:"/Pics/company man.jpg",
+     image1:"Pics/company man.jpg",
     quote: "Taylor is a professional Designer he really helps my business by providing value to my business.",
     name: "Brandon Frason",
     role: "Senior Software Dev,Costemic Sport"
@@ -468,4 +468,5 @@ function downloadFile(filename) {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);}
+
 
