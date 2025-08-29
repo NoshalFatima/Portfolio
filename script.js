@@ -419,49 +419,14 @@ document.addEventListener("DOMContentLoaded", () => {
         
 
     
-   document.addEventListener("DOMContentLoaded", () => {
-    const openMenuButton = document.getElementById('openMenuButton');
-    const closeMenuButton = document.getElementById('closeMenuButton');
+   document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menuToggle');
     const mobileMenu = document.getElementById('mobileMenu');
-    const menuOverlay = document.getElementById('menuOverlay');
 
-    function openMenu() {
-        mobileMenu.classList.add('active');
-        menuOverlay.classList.add('active');
-        // 👇 Removed this line so page doesn't freeze
-        // document.body.style.overflow = 'hidden';
-    }
-
-    function closeMenu() {
-        mobileMenu.classList.remove('active');
-        menuOverlay.classList.remove('active');
-        // 👇 Not needed anymore
-        // document.body.style.overflow = 'auto';
-    }
-
-    openMenuButton.addEventListener('click', openMenu);
-    closeMenuButton.addEventListener('click', closeMenu);
-    menuOverlay.addEventListener('click', closeMenu);
-
-    const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
-    mobileMenuLinks.forEach(link => {
-        link.addEventListener('click', closeMenu);
+    menuToggle.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
     });
-
-    // Scroll animation
-    function checkVisibility() {
-        const elements = document.querySelectorAll('.fade-in');
-        elements.forEach(element => {
-            const position = element.getBoundingClientRect();
-            if (position.top < window.innerHeight - 100) {
-                element.classList.add('visible');
-            }
-        });
-    }
-
-    window.addEventListener('scroll', checkVisibility);
-    window.addEventListener('load', checkVisibility);
-});
+  });
 
         
 
@@ -473,6 +438,7 @@ function downloadFile(filename) {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);}
+
 
 
 
