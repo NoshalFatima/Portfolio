@@ -415,7 +415,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
       
-        document.addEventListener("DOMContentLoaded", () => {
+        
+        
+
+    
+   document.addEventListener("DOMContentLoaded", () => {
     const openMenuButton = document.getElementById('openMenuButton');
     const closeMenuButton = document.getElementById('closeMenuButton');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -424,13 +428,15 @@ document.addEventListener("DOMContentLoaded", () => {
     function openMenu() {
         mobileMenu.classList.add('active');
         menuOverlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        // 👇 Removed this line so page doesn't freeze
+        // document.body.style.overflow = 'hidden';
     }
 
     function closeMenu() {
         mobileMenu.classList.remove('active');
         menuOverlay.classList.remove('active');
-        document.body.style.overflow = 'auto';
+        // 👇 Not needed anymore
+        // document.body.style.overflow = 'auto';
     }
 
     openMenuButton.addEventListener('click', openMenu);
@@ -458,9 +464,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
         
-        window.addEventListener('scroll', checkVisibility);
-        window.addEventListener('load', checkVisibility);
-        
 
 
 function downloadFile(filename) {
@@ -470,6 +473,7 @@ function downloadFile(filename) {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);}
+
 
 
 
