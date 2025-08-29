@@ -23,56 +23,75 @@
 
 
 <!-- Header/Navigation -->
-    <header class="fixed top-0 left-0 w-full bg-gradient-to-r from-[#170C20] to-[#261540] shadow-md z-50">
-  <div class="container mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
+   <header class="fixed w-full bg-black shadow-md z-50">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
     
-    <!-- Top Bar: Logo + Email + Hamburger -->
-    <div class="w-full flex items-center justify-between">
-      <div class="flex items-center space-x-4 mr-6">
-        <img src="Pics/NF.jpg" class="w-12 h-12 rounded-full" alt="Logo">
-        <a href="mailto:noshalprincess@gmail.com" class="text-sm font-bold text-white mr-4">noshalprincess@gmail.com</a>
-      </div>
-
-      <!-- Hamburger Button -->
-      <button id="menuToggle" class="md:hidden text-white text-2xl">
-        <i class="fas fa-bars"></i>
-      </button>
+    <!-- Logo + Email -->
+    <div class="flex items-center space-x-4">
+      <img src="Pics/NF.jpg" class="w-12 h-12 rounded-full" alt="Logo">
+      <a href="#" class="text-sm font-bold text-white">noshalprincess@gmail.com</a>
     </div>
 
-    <!-- Navigation Menu -->
-    <nav  id="mobileMenu"
-  class="hidden w-full  text-white text-base flex-col justify-center items-center space-y-4 md:flex md:flex-row md:items-center md:space-x-6 md:space-y-0 mt-4 md:mt-0 z-50">
-      <a href="#home" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition ">Home
+    <!-- Desktop Navigation -->
+    <nav class="hidden sm:flex items-center space-x-4 lg:space-x-6 text-white text-base">
+      <a href="#home" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Home
         <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a href="#services" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition">Services
+      <a href="#services" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Services
         <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a href="#portfolio" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition">Portfolio
+      <a href="#portfolio" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Portfolio
         <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a href="#experience" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition">Experience
+      <a href="#experience" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Experience
         <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a href="#skills" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition">Skills
+      <a href="#skills" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Skills
         <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a href="#testimonials" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition">Testimonials
+      <a href="#testimonials" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Testimonials
         <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a href="#Blog" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition">Blogs
+      <a href="#blog" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Blogs
         <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
     </nav>
 
-    <!-- Desktop Only Button -->
-    <div class="mt-4 md:mt-0">
-      <button class="hidden md:block rounded-full px-4 py-2 bg-gradient-to-r from-[#261540] to-[#7243d2]  text-sm text-white hover:from-[#7243d2] hover:to-[#261540] transition whitespace-nowrap">
-        Hire Me!
-      </button>
-    </div>
+    <!-- Hamburger (mobile only) -->
+    <button id="menuToggle" class="sm:hidden text-white text-2xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
   </div>
+
+  <!-- Mobile Menu -->
+  <nav
+    id="mobileMenu"
+    class="hidden sm:hidden w-full text-[6px] opacity-70 text-sm text-white flex-col items-center space-y-4 py-4"
+  >
+    <a href="#home" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Home
+      <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+    <a href="#services" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Services
+      <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+    <a href="#portfolio" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Portfolio
+      <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+    <a href="#experience" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Experience
+      <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+    <a href="#skills" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Skills
+      <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+    <a href="#testimonials" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Testimonials
+      <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+    <a href="#blog" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Blogs
+      <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </nav>
 </header>
+
 
     <!-- Hero Section -->
     <section id="home" class="pt-32 scroll-mt-24 pb-20 mode h-100 bg-gradient-to-r from-[#170C24] to-[#261540] fade-in">
@@ -129,7 +148,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-black ">
+    <section id="services" class="py-20 bg-black scroll-mt-22">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-white bg-clip-text text-transparent">My Quality Services</h2>
@@ -191,7 +210,7 @@
  
 <hr class="border-t-1 border-purple-600">
     </section>
-<section id="portfolio" class="py-20  scroll-mt-24 mode lg:px-10 bg-gradient-to-r from-[#170C24] to-[#261540] fade-in" >
+<section id="portfolio" class="py-20  scroll-mt-22 mode lg:px-10 bg-gradient-to-r from-[#170C24] to-[#261540] fade-in" >
   <div class="container  px-6">
     <div class="text-center mb-16 lg:ml-20">
       <h2 class="text-4xl text-center font-bold mb-4 bg-gradient-to-r from-purple-600 to-[#FFFF] bg-clip-text text-transparent">My Recent Works</h2>
@@ -213,7 +232,7 @@
   </div>
 </section>
 <!-- Experience & Education Section -->
-    <section id="experience" class="py-20  lg:px-10 bg-black w-full  sm:p-5 px-10 scroll-mt-24  ">
+    <section id="experience" class="py-20  lg:px-10 bg-black w-full  sm:p-5 px-10 scroll-mt-22  ">
         
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -378,7 +397,7 @@
   </section>
 
 <!--Blog-->
-  <section id="Blog" class="bg-[#170C22] scroll-mt-24 fade-in  mode px-10 lg:px-10 md:px-6 sm:px-6 py-10  lg:py-20 w-full">
+  <section id="Blog" class="bg-[#170C22] scroll-mt-22 fade-in  mode px-10 lg:px-10 md:px-6 sm:px-6 py-10  w-full">
     <div class="container lg:m-20 justify-between sm:items-center  mt-0  md:m-6 sm:m-4">
         <!-- Blo Section -->
         <div class="text-center mb-12 mx-auto">
@@ -648,6 +667,7 @@
 </html>
 
    
+
 
 
 
