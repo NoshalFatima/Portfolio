@@ -25,12 +25,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: sans-serif;
-}
-
-
-
 
 
 
@@ -405,9 +399,15 @@ body {
   animation: fadeIn 2s forwards;
   animation-delay: 1s;
 }
+.light-mode body{
+        background-color:white;
+        background: white;
+}
 
-
-
+.light-mode header{
+        background: linear-gradient(to right, #7243d2, #ccc) !important;
+        color:white;
+}
 
 .light-mode {
     background-color: white;
@@ -552,6 +552,7 @@ background-color: white;
        
 
         
+
 
 
 
