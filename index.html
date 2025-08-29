@@ -22,25 +22,22 @@
    
 
 <div class="mobile-menu" id="mobileMenu">
-        <button class="absolute top-4 right-4 text-white text-2xl" id="closeMenu">
-            <i class="fas fa-times"></i>
-            <button class="absolute top-4 right-4 text-white text-2xl" id="openMenu">
+        <button class="close-btn" id="closeMenuButton">
             <i class="fas fa-times"></i>
         </button>
-        </button>
-    
         <nav>
-            <a href="#home" class="text-white text-xl py-2">Home</a>
-            <a href="#services" class="text-white text-xl py-2">Services</a>
-            <a href="#portfolio" class="text-white text-xl py-2">Portfolio</a>
-            <a href="#experience" class="text-white text-xl py-2">Experience</a>
-            <a href="#skills" class="text-white text-xl py-2">Skills</a>
-            <a href="#testimonials" class="text-white text-xl py-2">Testimonials</a>
-            <a href="#Blog" class="text-white text-xl py-2">Blogs</a>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#blog">Blogs</a>
         </nav>
     </div>
     
-    <div class="menu-overlay fixed inset-0 bg-black opacity-50 hidden z-40" id="menuOverlay " ></div>
+   <div class="menu-overlay" id="menuOverlay"></div>
+
 
     <!-- Header/Navigation -->
     <header class="fixed w-full mode bg-gradient-to-r from-[#170C20] to-[#261540] shadow-md z-50 text-white">
@@ -48,7 +45,7 @@
             <img src="Pics/NF.jpg" class="w-12 h-12 rounded-full">
             <a href="#" class="text-sm font-bold mr-2 header-email">noshalprincess@gmail.com</a>
             
-            <nav class="hidden md:flex space-x-4 lg:space-x-6">
+            <nav class="hidden md:flex space-x-4 lg:space-x-6 desktop-menu">
             <a href="#home"class="relative inline-block light px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Home
             <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
             </a>          
@@ -72,9 +69,9 @@
             </a>
             </nav>
             
-            <div class="flex items-center">
+            <div class="flex items-center menu-right">
                 <button class="hidden md:block rounded-full bg-gradient-to-r from-[#261540] to-[#7243d2] px-4 py-2 text-sm hover:text-primary transition whitespace-nowrap hover:bg-gradient-to-r hover:from-[#7243d2] hover:to-[#261540]">Hire Me!</button>
-                <button class="md:hidden text-white text-xl" id="openMenu">
+                <button class="menu-toggle" id="openMenuButton">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -655,6 +652,7 @@
 </html>
 
    
+
 
 
 
