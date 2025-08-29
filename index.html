@@ -21,62 +21,58 @@
 <body class="bg-black text-dark scroll-smooth">
    
 
-<div class="mobile-menu" id="mobileMenu">
-        <button class="close-btn" id="closeMenuButton">
-            <i class="fas fa-times"></i>
-        </button>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#blog">Blogs</a>
-        </nav>
-    </div>
+
+<!-- Header/Navigation -->
+    <header class="fixed top-0 left-0 w-full bg-gradient-to-r from-[#170C20] to-[#261540] shadow-md z-50">
+  <div class="container mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
     
-   <div class="menu-overlay" id="menuOverlay"></div>
+    <!-- Top Bar: Logo + Email + Hamburger -->
+    <div class="w-full flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <img src="Pics/NF.jpg" class="w-12 h-12 rounded-full" alt="Logo">
+        <a href="mailto:noshalprincess@gmail.com" class="text-sm font-bold text-white">noshalprincess@gmail.com</a>
+      </div>
 
+      <!-- Hamburger Button -->
+      <button id="menuToggle" class="md:hidden text-white text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
 
-    <!-- Header/Navigation -->
-    <header class="fixed w-full mode bg-gradient-to-r from-[#170C20] to-[#261540] shadow-md z-50 text-white">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center header-container">
-            <img src="Pics/NF.jpg" class="w-12 h-12 rounded-full">
-            <a href="#" class="text-sm font-bold mr-2 header-email">noshalprincess@gmail.com</a>
-            
-            <nav class="hidden md:flex space-x-4 lg:space-x-6 desktop-menu">
-            <a href="#home"class="relative inline-block light px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Home
-            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>          
-             <a href="#services" class="relative light inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Services
-            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-             <a href="#portfolio" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Portfolio
-            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="#experience" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Experience
-            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
-            </a> 
-            <a href="#skills" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Skills
-            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
-            </a> 
-            <a href="#testimonials" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Testimonials
-            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
-            </a> 
-            <a href="#Blog" class="relative inline-block px-2 py-1 text-white hover:text-purple-500 transition duration-300 group">Blogs
-            <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            </nav>
-            
-            <div class="flex items-center menu-right">
-                <button class="hire-btn hidden md:block rounded-full bg-gradient-to-r from-[#261540] to-[#7243d2] px-4 py-2 text-sm hover:text-primary transition whitespace-nowrap hover:bg-gradient-to-r hover:from-[#7243d2] hover:to-[#261540]">Hire Me!</button>
-                <button class="menu-toggle" id="openMenuButton">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+    <!-- Navigation Menu -->
+    <nav  id="mobileMenu"
+  class="hidden w-full  text-white text-base flex-col justify-center items-center space-y-4 md:flex md:flex-row md:items-center md:space-x-6 md:space-y-0 mt-4 md:mt-0 z-50">
+      <a href="#home" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition ">Home
+        <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#services" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition">Services
+        <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#portfolio" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition">Portfolio
+        <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#experience" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition">Experience
+        <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#skills" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition">Skills
+        <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#testimonials" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition">Testimonials
+        <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#blog" class="group relative inline-block px-2 py-1 hover:text-purple-500 transition">Blogs
+        <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+    </nav>
+
+    <!-- Desktop Only Button -->
+    <div class="mt-4 md:mt-0">
+      <button class="hidden md:block rounded-full px-4 py-2 bg-gradient-to-r from-[#261540] to-[#7243d2]  text-sm text-white hover:from-[#7243d2] hover:to-[#261540] transition whitespace-nowrap">
+        Hire Me!
+      </button>
+    </div>
+  </div>
+</header>
 
     <!-- Hero Section -->
     <section id="home" class="pt-32 scroll-mt-24 pb-20 mode h-100 bg-gradient-to-r from-[#170C24] to-[#261540] fade-in">
@@ -164,7 +160,7 @@
       <span class="text-xl font-semibold mr-4">03</span>
       <span class="text-2xl font-semibold whitespace-nowrap text-white">API Integrations</span>
     </div>
-    <p class="text-secondary text-white text-xl ml-8 sm:ml-4 md:ml-12 sm:text-left">Build and integrate APIs to connect websites with third-party applications, enhancing functionality and performance.</p>
+    <p class="text-secondary text-white text-xl ml-6 sm:ml-4 md:ml-12 sm:text-left">Build and integrate APIs to connect websites with third-party applications, enhancing functionality and performance.</p>
   </div>
   <hr class="border-t-1 border-purple-600 m-0 p-0">
   <div class="service-card bg-black p-8 rounded-lg shadow-md hover:shadow-lg transition flex flex-col md:flex-row items-center md:items-start hover:bg-gradient-to-r hover:from-purple-600 hover:to-[#261540] hover:text-white hover:text-white hover:m-0">
@@ -383,7 +379,7 @@
 
 <!--Blog-->
   <section id="Blog" class="bg-[#170C22] scroll-mt-24 fade-in  mode px-10 lg:px-10 md:px-6 sm:px-6 py-10  lg:py-20 w-full">
-    <div class="container lg:m-20 justify-between sm:items-center  lg:mt-0 md:m-6 sm:m-4">
+    <div class="container lg:m-20 justify-between sm:items-center  mt-0  md:m-6 sm:m-4">
         <!-- Blo Section -->
         <div class="text-center mb-12 mx-auto">
             <h1 class="text-4xl font-bold  mb-4  bg-gradient-to-r from-purple-600 to-[#FFFF] bg-clip-text text-transparent">Recent Blogs</h1>
@@ -652,6 +648,7 @@
 </html>
 
    
+
 
 
 
