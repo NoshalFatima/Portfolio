@@ -206,7 +206,7 @@ function renderItems(category) {
 
   items.forEach(item => {
     const html = `
-      <div class="rounded-lg items-center justify-center overflow-hidden shadow-md h-[420px] sm:h-[280px] lg:h-[420px] lg:ml-12 lg:mr-6  hover:shadow-xl border-t-[32px] border-l-[32px] border-r-[32px] border-[#170C24] transition bg-black lg:w-[440px] xl:w-[600px] 2xl:w-[800px] w-full group cursor-pointer  relative">
+      <div class="rounded-lg items-center justify-center overflow-hidden shadow-md h-auto sm:h-[280px] lg:h-[420px] lg:ml-12 lg:mr-6  hover:shadow-xl border-t-[32px] border-l-[32px] border-r-[32px] border-[#170C24] transition bg-black lg:w-[440px] xl:w-[600px] 2xl:w-[800px] w-full group cursor-pointer  relative">
           
         <img src="${item.image}" class="portfolio-bg h-full  w-full object-cover position-center " >
           <!-- Full-width gradient button at the bottom with Font Awesome icon -->
@@ -413,44 +413,50 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-// Mobile menu functionality
-        const openMenuButton = document.getElementById('openMenu');
-        const closeMenuButton = document.getElementById('closeMenu');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const menuOverlay = document.getElementById('menuOverlay');
-        
-        function openMenu() {
-            mobileMenu.classList.add('active');
-            menuOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-        
-        function closeMenu() {
-            mobileMenu.classList.remove('active');
-            menuOverlay.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-        
-        openMenuButton.addEventListener('click', openMenu);
-        closeMenuButton.addEventListener('click', closeMenu);
-        menuOverlay.addEventListener('click', closeMenu);
-        
-        // Close menu when clicking on links
-        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', closeMenu);
+
+      
+        document.addEventListener("DOMContentLoaded", () => {
+    const openMenuButton = document.getElementById('openMenuButton');
+    const closeMenuButton = document.getElementById('closeMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+
+    function openMenu() {
+        mobileMenu.classList.add('active');
+        menuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        mobileMenu.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    openMenuButton.addEventListener('click', openMenu);
+    closeMenuButton.addEventListener('click', closeMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // Scroll animation
+    function checkVisibility() {
+        const elements = document.querySelectorAll('.fade-in');
+        elements.forEach(element => {
+            const position = element.getBoundingClientRect();
+            if (position.top < window.innerHeight - 100) {
+                element.classList.add('visible');
+            }
         });
-        
-        // Animation on scroll
-        function checkVisibility() {
-            const elements = document.querySelectorAll('.fade-in');
-            elements.forEach(element => {
-                const position = element.getBoundingClientRect();
-                if (position.top < window.innerHeight - 100) {
-                    element.classList.add('visible');
-                }
-            });
-        }
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('load', checkVisibility);
+});
+
         
         window.addEventListener('scroll', checkVisibility);
         window.addEventListener('load', checkVisibility);
@@ -464,6 +470,7 @@ function downloadFile(filename) {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);}
+
 
 
 
